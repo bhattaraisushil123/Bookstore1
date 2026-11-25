@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test",
     "dev": "node --env-file-if-exists=.env --watch src/server.js",
-    "start": "node --env-file-if-exists=.env src/server.js"
+    "start": "node src/index.js",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,17 @@
   "type": "module",
   "dependencies": {
     "express": "^5.2.1"
-  }
+  },
+  "devDependencies": {
+    "supertest": "^7.3.2",
+    "vitest": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhattaraisushil123/Bookstore1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhattaraisushil123/Bookstore1/issues"
+  },
+  "homepage": "https://github.com/bhattaraisushil123/Bookstore1#readme"
 }
